@@ -1,0 +1,7 @@
+http://webhaberproje2.somee.com/
+
+192114013-Muhammed Said Gökkaya
+192114008-Enes Settaşı
+192114023-Eren Tetik
+
+docker pull erentetik/haber

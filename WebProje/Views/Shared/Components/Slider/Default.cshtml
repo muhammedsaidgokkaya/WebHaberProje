@@ -1,0 +1,19 @@
+﻿@model List<WebProje.Models.Haber>
+
+<div class="content">
+    <div id="featured_slide">
+        <ul id="featurednews">
+            @foreach(var i in Model){
+                <li>
+                    <img src="~/Resimler/HaberResim/@i.ResimYol" alt="" />
+                    <div class="panel-overlay">
+                        <h2>@i.Baslik</h2>
+                        <p>
+                            @i.Konu
+                        </p>
+                    </div>
+                </li>
+            }
+        </ul>
+    </div>
+</div>

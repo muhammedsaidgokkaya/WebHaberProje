@@ -1,0 +1,11 @@
+﻿@model List<WebProje.Models.Haber>
+
+@foreach(var i in Model){
+    <div class="fl_right">
+        <a asp-action="HaberDetay" asp-controller="Home" asp-route-id="@i.Id">
+            <img style ="width:100px;height:100px;" src="~/Resimler/HaberResim/@i.ResimYol" alt="" />
+        </a>
+        <p><strong>@i.Baslik</strong></p>
+        <p>@i.Konu  <a asp-action="HaberDetay" asp-controller="Home" asp-route-id="@i.Id">İnceleyiniz</a></p>
+    </div>
+}
